@@ -3,6 +3,10 @@ package Task02;
 
 import java.io.Serializable;
 
+
+ /**
+ * The class Electric resistance implements serializable
+ */ 
 public class ElectricResistance implements Serializable {
     private static final long serialVersionUID = 1L;
     private final double voltage1;
@@ -11,7 +15,19 @@ public class ElectricResistance implements Serializable {
     private final double current;
     private final double resistance;
     
-    public ElectricResistance(double v1, double v2, double v3, double i) {
+
+/** 
+ *
+ * Electric resistance
+ *
+ * @param v1  the v1
+ * @param v2  the v2
+ * @param v3  the v3
+ * @param i  the i
+ * @return public
+ */
+    public ElectricResistance(double v1, double v2, double v3, double i) { 
+
         voltage1 = v1;
         voltage2 = v2;
         voltage3 = v3;
@@ -19,10 +35,26 @@ public class ElectricResistance implements Serializable {
         resistance = (voltage1 + voltage2 + voltage3) / current;
     }
     
-    public double getResistance() {
+
+/** 
+ *
+ * Gets the resistance
+ *
+ * @return the resistance
+ */
+    public double getResistance() { 
+
         return resistance;
     }
-    public double calculateTotalResistance() { 
+
+/** 
+ *
+ * Calculate total resistance
+ *
+ * @return double
+ */
+    public double calculateTotalResistance() {  
+
 
         double totalVoltage = voltage1 + voltage2 + voltage3;
         return totalVoltage / current;
@@ -32,11 +64,13 @@ public class ElectricResistance implements Serializable {
      *
      * @return
      */
-    public String getHexadecimalRepresentation() { 
+    public String getHexadecimalRepresentation() {  
+
 
         double resistance = calculateTotalResistance();
         int hexValue = (int) resistance;
         return Integer.toHexString(hexValue);
     }
 }
+
 

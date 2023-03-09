@@ -2,8 +2,20 @@ package Task02;
 
 import java.io.*;
 
+
+ /**
+ * The class Electric resistance demo
+ */ 
 public class ElectricResistanceDemo {
-    public static void main(String[] args) {
+
+/** 
+ *
+ * Main
+ *
+ * @param args  the args
+ */
+    public static void main(String[] args) { 
+
         ElectricResistance er = new ElectricResistance(10, 20, 30, 2.5);
         
         // серіалізація
@@ -20,5 +32,6 @@ public class ElectricResistanceDemo {
         }
     }
 }
+
 
 
