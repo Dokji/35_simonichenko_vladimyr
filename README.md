@@ -23,5 +23,7 @@
 
 # Результат виконання програми:
 ![](Task02/Res02.png)
+
 **Виконання** **ElectricResistanceDemo:**
+
 ![](Task02/Res022.png)
